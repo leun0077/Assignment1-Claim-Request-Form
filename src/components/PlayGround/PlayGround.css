@@ -1,0 +1,12 @@
+button {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  margin: 1rem;
+}
+.red-background {
+  background-color: red;
+}
+.green-background {
+  background-color: green;
+}
