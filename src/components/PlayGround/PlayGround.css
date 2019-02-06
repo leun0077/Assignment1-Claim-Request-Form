@@ -1,12 +1,6 @@
 button {
-  background-color: green;
+  background-color: red;
   color: white;
   font-size: 20px;
   margin: 1rem;
-}
-.red-background {
-  background-color: red;
-}
-.green-background {
-  background-color: green;
 }
