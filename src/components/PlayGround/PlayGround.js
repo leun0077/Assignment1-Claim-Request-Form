@@ -2,7 +2,11 @@ export default {
   data() {
     return {
       ruleForm: {
-        name: '',
+        first: '',
+        last: '',
+        email: '',
+        tick: '',
+        title: '',
         desc: ''
       },
       rules: {
