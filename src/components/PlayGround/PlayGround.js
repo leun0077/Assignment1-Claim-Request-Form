@@ -1,3 +1,5 @@
+import { Option } from 'element-ui'
+
 export default {
   data() {
     // Holds all the data of what is being writen
@@ -72,7 +74,7 @@ export default {
       }
     }
   },
-  //  Else if statement making sure form wont submit unless everything is inputted correctly
+  // if statement making sure form wont submit unless everything is inputted correctly
   methods: {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
