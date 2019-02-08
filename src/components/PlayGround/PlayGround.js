@@ -1,5 +1,6 @@
 export default {
   data() {
+    // Holds all the data of what is being writen
     return {
       ruleForm: {
         first: '',
@@ -9,6 +10,7 @@ export default {
         title: '',
         desc: ''
       },
+      // Rules set for the form along with error message
       rules: {
         first: [
           {
@@ -70,6 +72,7 @@ export default {
       }
     }
   },
+  //  Else if statement making sure form wont submit unless everything is inputted correctly
   methods: {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
@@ -80,6 +83,7 @@ export default {
           console.log('error submit!!')
           return false
         } else if (valid) {
+          // This is where user says yes or no
           this.$confirm('Are you sure you want to submit?', 'Confirm', {
             distinguishCancelAndClose: true,
             confirmButtonText: 'Yes',
